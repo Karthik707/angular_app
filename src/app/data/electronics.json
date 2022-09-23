@@ -1,0 +1,45 @@
+[
+    {
+        "pid":1,
+        "pname":"Samsung Mobile",
+        "pdescription":"Samsung - double door Samsung South Korean company that is one of the world largest producers of electronic devices.",
+        "price":30000,
+        "img":"https://images.samsung.com/is/image/samsung/p6pim/in/2208/gallery/in-galaxy-z-fold4-f936-sm-f936bzadinu-thumb-533084005?$320_320_PNG$"
+    },
+    {
+        "pid":2,
+        "pname":"LG Refrigerator",
+        "pdescription":"LG - double door Samsung South Korean company that is one of the world largest producers of electronic devices.",
+        "price":55990,
+        "img":"https://5.imimg.com/data5/HA/LC/MY-11298095/lg-refrigerator-500x500.jpg"
+    },
+    {
+        "pid":3,
+        "pname":"Whirpool Washing Machine",
+        "pdescription":"Whirpool - double door Samsung South Korean company that is one of the world largest producers of electronic devices.",
+        "price":11990,
+        "img":"https://m.media-amazon.com/images/I/61WJqbSrQQL._SL1500_.jpg"
+    },
+    {
+        "pid":4,
+        "pname":"Godrej Almira",
+        "pdescription":"Godrej - double door Samsung South Korean company that is one of the world largest producers of electronic devices.",
+        "price":21290,
+        "img":"https://rukminim1.flixcart.com/image/416/416/juh9ksw0/cupboard-almirah/f/7/b/stainless-steel-wardrobe-h1-exs-led-godrej-interio-graphite-grey-original-imaffhh68qcam7e6.jpeg?q=70"
+    },
+    {
+        "pid":5,
+        "pname":"Lenovo Laptop",
+        "pdescription":"Lenovo - double door Samsung South Korean company that is one of the world largest producers of electronic devices.",
+        "price":40999,
+        "img":"https://www.lenovo.com/medias/lenovo-laptops-think-thinkpad-x-series-x12-detachable-front.png?context=bWFzdGVyfHJvb3R8Njg4MDd8aW1hZ2UvcG5nfGg5ZC9oMjgvMTQxMTE3NDk1Mzc4MjIucG5nfGZmNzI0NjM5MjBjNTY0ODYxMGJmNzMyZTk4MzU1OGQ0ZGM4OGM1ZWZjMzNmMTgyMDY3NWI2NzUwMjJjNTIyZjQ"
+    },
+    {
+        "pid":6,
+        "pname":"Bosch Mixer",
+        "pdescription":"Bosch - double door Samsung South Korean company that is one of the world largest producers of electronic devices.",
+        "price":15490,
+        "img":"https://www.suryaelectronics.in/img/Product/Main/BOSCHKitchenAppliancesMixerJuicerGrinder26.jpg"
+    }
+
+]

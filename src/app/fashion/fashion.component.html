@@ -1,0 +1,44 @@
+<div class="card-body col-lg-12" class="card bg-dark" style="border: none; margin-top: 20px; height: 250px;width: 350px;margin-left: 20px; color: white;">
+    <div class="row" style="margin-top:10px;border-color:black;border-radius:15px;">
+        <div class="col-lg-3">
+            
+            <img [src]="product.img">
+        </div>
+        <div class="col-lg-9" style="margin-top:20px;">
+            
+            <div style="margin-left: 80px;">
+                <strong>Product: {{product.pname | uppercase}}</strong> 
+               
+            </div>
+            
+            <div [hidden]="productDetail" style="margin-left: 80px;">
+                Brand: {{product.pbrand}}
+                 <div class="dropdown">
+                    <button class="btn dropdown-toggle btn-sm" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="background-color:white; color: black;">
+                      Size
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#"><strong>S</strong></a></li>
+                      <li><a class="dropdown-item" href="#"><strong>M</strong></a></li>
+                      <li><a class="dropdown-item" href="#"><strong>L</strong></a></li>
+                    </ul>
+                  </div>
+               
+                Price: {{product.price | currency:'INR'}}
+                
+                
+            </div>
+            
+            <div style="margin-left: 50px; margin-top: 70px;">
+                
+                <app-counter></app-counter>
+                <button (click)="showproductDetailsToggle()" [ngClass]="toggleContent()" type="button" style="background-color:white; color: black; margin-left: 30px;"><small></small></button>
+                <button type="button" class="btn btn-info btn-sm" style="margin-left: 10px; background-color:white; color:black;"><small>Buy</small></button>
+                
+            </div>
+        </div>
+    </div> 
+
+    
+    
+     

@@ -1,0 +1,46 @@
+img{
+    height: 200px;
+    width: 200px;
+    margin-left: 40px;
+    margin-top: 5px;
+
+}
+
+
+
+  .card_img {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px solid;
+
+  }
+
+  .card{
+    margin-right: 10px;
+    
+  }
+  /*.card:hover{
+
+box-shadow: 5px 6px 6px 2px #e9ecef;
+transform: scale(1.1);
+} */
+
+ul{
+    list-style:circle;
+}
+
+marquee{
+  text-shadow:2px 3px 3px goldenrod;
+  color:white;
+  font-size: 38px;
+  background-color: black;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+  box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+  border-radius: 0;
+  border: 0;
+}

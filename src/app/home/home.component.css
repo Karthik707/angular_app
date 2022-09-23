@@ -1,0 +1,44 @@
+.image{
+   height: 400px;
+   width: 1400px;
+}
+.image:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+  box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+  border-radius: 0;
+  border: 0;
+}
+h5{
+    
+    color: black;
+    font-size: xx-large;
+}
+
+.caption{
+    
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.card {
+    /*margin-left: 40px;*/
+    height: 200px;
+    border: none;
+  }
+
+  .card_img {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px solid;
+
+  }
+  .card:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+    box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+    border-radius: 0;
+    border: 0;
+  }

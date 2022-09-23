@@ -1,0 +1,52 @@
+[
+    {
+        "pid":1,
+        "pname":"Shirt",
+        "pbrand":"Ramraj",
+        "price":650,
+        "img":"https://www.swarajyam.co.in/image/cache/catalog/Short%20Khadi%20Kurta/plain-white-khadi-shirt-200x200.jpg"
+    },
+    {
+        "pid":2,
+        "pname":"Tshirt",
+        "pbrand":"Levis",
+        "price":1090,
+        "img":"https://casablancaindia.com/image/cache/catalog/prods/2510-200x200.jpg"
+    },
+    {
+        "pid":3,
+        "pname":"Pant",
+        "pbrand":"Roadster",
+        "price":700,
+        "img":"https://planetdsg.com/public/app/6632/dsg/RAMJET%20AIR%20PANTS/RAMJET%20AIR%20PANTS%20BLACK.jpg?width=200"
+    },
+    {
+        "pid":4,
+        "pname":"Shorts",
+        "pbrand":"Puma",
+        "price":600,
+        "img":"https://contents.mediadecathlon.com/p2345497/1b5f3ffa86f18c429542a2d33b37af55/p2345497.jpg?format=auto&quality=70&f=200x0"
+    },
+    {
+        "pid":5,
+        "pname":"Saree",
+        "pbrand":"Ramraj",
+        "price":3000,
+        "img":"https://1lyuijwwycldw.cdn.shift8web.com/wp-content/uploads/2021/02/gola-pink-original-cotton-silk-saree-200x200.jpeg"
+    },
+    {
+        "pid":6,
+        "pname":"Women Top",
+        "pbrand":"Nykaa",
+        "price":400,
+        "img":"https://tiimg.tistatic.com/fp/1/002/880/ladies-top-060-w300.jpg"
+    },
+    {
+        "pid":7,
+        "pname":"Shoe",
+        "pbrand":"Puma",
+        "price":6000,
+        "img":"https://5.imimg.com/data5/QN/PA/GLADMIN-35699969/puma-speeder-white-casual-shoes-250x250.jpg"
+    }
+
+]

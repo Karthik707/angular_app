@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg " style="background-color: rgb(0, 9, 10);color: white;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="color: white;font-style: oblique;font-size: xx-large;"><strong>{{title}}</strong></a>
+      <img [src]="logo" alt="amazon">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="" style="color: white;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="features"  style="color: white;">Features</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style="color: white;">
+              Product Types
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" routerLink="electronics">Electronics Devices</a></li>
+              <li><a class="dropdown-item" routerLink="fashiondeals">Fashion deals</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" routerLink="productdetail">product details</a></li>
+              
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="contact"  style="color: white;">Contacts</a>
+           
+          </li>
+          <li><a class="nav-item" routerLink="register" >Register</a></li>
+          <li><a class="nav-item" routerLink="login" >Login</a></li>
+        </ul>
+        <form class="d-flex" style="margin-right: 300px;">
+          <input class="form-control me-2" type="search" #productname placeholder="Enter product name" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit" (click)="search_product(productname.value); productname.value=''">Search</button>
+            <br>
+            <app-search [product]="productentered"></app-search>
+        
+        </form>
+      </div>
+    </div>
+  </nav>

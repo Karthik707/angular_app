@@ -1,0 +1,247 @@
+
+
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets\z1.png" class="d-block w-100" class="image" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Different brands and Products</h5>
+          <p [ngStyle]="{color:mycolor}" style="text: size adjust 20px; font-size: large; background-color: white; ">Different Types of Products in Reasonable Price</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://c8.alamy.com/comp/PR0MCY/electronics-promotional-shopping-sale-computer-gadgets-and-touch-screen-devices-PR0MCY.jpg" class="d-block w-100" class="image" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Electronic Devices</h5>
+          <p [ngStyle]="{color:mycolor}" style="text: size adjust 20px; font-size: large; background-color: white; ">Different Types of Electronic Devices in Reasonable Price</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets\p4.jpg" class="d-block w-100" class="image" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Wearables</h5>
+          <p [ngStyle]="{color:mycolor}" style="text: size adjust 20px; font-size: large; background-color: white; ">Different Types of Wearable in Reasonable Price</p>
+        </div>
+      </div>
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <br>
+  <div class="caption">
+  <strong>Enter the Color for Carousel Contents:</strong>  <input [(ngModel)]="mycolor" type="text" style="border-radius:0px;">
+</div>
+<br>
+<br>
+<div class="container">
+    <div class="row">
+      <div class="col col-3 col-sm-6 col-md-3">
+        <div class="card"  style="width: 18rem;">
+          <img class="card_img" src="assets\c1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">T-shirt</h5>
+            <ul *ngIf="isVisible">
+                <!--Access the class products with ngClass-->
+                <!--Property Binding-->
+                <li *ngFor="let product of Products" >
+                    {{product.productname}}
+                </li>
+              </ul>
+            <button type="button" class="btn btn-primary" (click)="hide_products()" [ngClass]="toggleContent()">
+               
+            </button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left:20px;">
+              Buy <i class="fa-sharp fa-solid fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col col-3 col-sm-6 col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img class="card_img" src="assets\c2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Mobile</h5>
+            <ul *ngIf="isVisible">
+                <!--Access the class products with ngClass-->
+                <!--Property Binding-->
+                <li *ngFor="let products of Products1" >
+                    {{products.productname}}
+                </li>
+              </ul>
+            <button type="button" class="btn btn-primary" (click)="hide_products()" [ngClass]="toggleContent()">
+              
+            </button>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left:20px;">
+                Buy <i class="fa-sharp fa-solid fa-cart-plus"></i>
+              </button>
+          </div>
+        </div>
+      </div>
+      <div class="col col-3 col-sm-6 col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img class="card_img" src="assets\c3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Shampoo</h5>
+            <ul *ngIf="isVisible">
+                <!--Access the class products with ngClass-->
+                <!--Property Binding-->
+                <li *ngFor="let product of Products2" >
+                    {{product.productname}}
+                </li>
+              </ul>
+            <button type="button" class="btn btn-primary" (click)="hide_products()" [ngClass]="toggleContent()">
+               
+            </button>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left:20px;">
+                Buy <i class="fa-sharp fa-solid fa-cart-plus"></i>
+              </button>
+          </div>
+        </div>
+      </div>
+      <div class="col col-3 col-sm-6 col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img class="card_img" src="assets\c4.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Shoe</h5>
+            <ul *ngIf="isVisible">
+                <!--Access the class products with ngClass-->
+                <!--Property Binding-->
+                <li *ngFor="let product of Products3" >
+                    {{product.productname}}
+                </li>
+              </ul>
+            <button type="button" class="btn btn-primary" (click)="hide_products()" [ngClass]="toggleContent()">
+               
+            </button>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"style="margin-left:20px;">
+                Buy <i class="fa-sharp fa-solid fa-cart-plus"></i>
+              </button>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+  <footer class="text-white text-center text-lg-start bg-dark">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row mt-4">
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">About company</h5>
+
+          <p>
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+            voluptatum deleniti atque corrupti.
+          </p>
+
+          <p>
+            Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
+            molestias.
+          </p>
+
+          <div class="mt-4">
+            <!-- Facebook -->
+            <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-facebook-f"></i></a>
+            <!-- Dribbble -->
+            <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-dribbble"></i></a>
+            <!-- Twitter -->
+            <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-twitter"></i></a>
+            <!-- Google + -->
+            <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-google-plus-g"></i></a>
+            <!-- Linkedin -->
+          </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
+
+          <div class="form-outline form-white mb-4">
+            <input type="text" id="formControlLg" class="form-control form-control-lg" />
+            <label class="form-label" for="formControlLg">Search</label>
+          </div>
+
+          <ul class="fa-ul" style="margin-left: 1.65em;">
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Warsaw, 00-967, Poland</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">contact@example.com</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 48 234 567 88</span>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Opening hours</h5>
+
+          <table class="table text-center text-white">
+            <tbody class="fw-normal">
+              <tr>
+                <td>Mon - Thu:</td>
+                <td>8am - 9pm</td>
+              </tr>
+              <tr>
+                <td>Fri - Sat:</td>
+                <td>8am - 1am</td>
+              </tr>
+              <tr>
+                <td>Sunday:</td>
+                <td>9am - 10pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">www.productfactory.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+

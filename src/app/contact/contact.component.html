@@ -1,0 +1,18 @@
+<div class="card"  style="width: 400px;height: 450px;margin-left: 450px;margin-top: 40px;">
+    <div class="card-body" *ngFor="let c of cont">
+      <h3 class="card-title" style="text-align: center; margin-top: 20px;">{{c.pname}}</h3>
+      <br>
+      <br>
+      
+      <p class="card-text"> <i class="fa-solid fa-phone" style="margin-right:20px; margin-left: 20px;"></i><strong>Phone:</strong>  {{c.pphone}}</p>
+      <br>
+      <p class="card-text"><i class="fa-sharp fa-solid fa-paper-plane" style="margin-right:20px; margin-left: 20px;"></i><strong>Email:</strong>  {{c.pemail}}</p>
+      <br>
+      <p class="card-text"><i class="fa-solid fa-location-dot" style="margin-right:20px; margin-left: 20px;"></i><strong>Address: </strong> {{c.paddress}}</p>
+      <br>
+      <p class="card-text"><i class="fa-brands fa-square-instagram"  style="margin-right:20px; margin-left: 20px;"></i><strong>Instagram:</strong>  {{c.pinsta}}</p>
+      <br>
+      <p class="card-text"><i class="fa-solid fa-globe" style="margin-right:20px; margin-left: 20px;"></i><strong>Website:</strong>  {{c.psite}}</p>
+      <br>
+    </div>
+  </div>

@@ -1,0 +1,37 @@
+<img src="https://static.vecteezy.com/system/resources/thumbnails/003/810/922/small/horizontal-banner-for-black-friday-sale-black-balls-with-shiny-ribbons-golden-letters-vector.jpg" alt="" style="width: 100%;margin-left: 0%;margin-top: 0%;">
+<marquee>Best Ever Products Only On Product Factory</marquee>
+
+
+
+<div class="container" *ngFor="let pdetails of productdetails" style="color: white;" >
+    <div class="row col col-md-3 col-md-4 " style="float: left; margin-top: 50px; margin-left: 10px;" >   
+      <div class="col col-3 col-sm-6 col-md-3">
+        <div class="card bg-dark"  style="width: 18rem;">
+          <img class="card_img" [src]="pdetails.img" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{pdetails.pname}}</h5>
+            <ul [ngSwitch]="pdetails.status"  style="font-weight:bold;">
+                <li>{{pdetails.pdescription}}</li>
+                <li>{{pdetails.price | currency:'INR'}}</li>
+                <li *ngSwitchCase="'In Stock'" class="text-success">
+                  {{pdetails.status }}
+                </li>
+                <li *ngSwitchCase="'Out of Stock'" class="text-danger">
+                  {{pdetails.status }}
+                </li>
+              </ul>
+            <button type="button" class="btn btn-primary" style="background-color: white; color:black;">
+               More Info
+            </button>
+            <button type="button" class="btn btn-primary" (click)="Onbuy()" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left:20px; background-color: white;color: black;" >
+              buy <i class="fa-sharp fa-solid fa-cart-plus"></i>
+            </button>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
