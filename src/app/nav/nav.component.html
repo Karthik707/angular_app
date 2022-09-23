@@ -8,37 +8,42 @@
       <div class="collapse navbar-collapse" id="navbarScroll">
         <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink="" style="color: white;">Home</a>
+            <a class="nav-link active" aria-current="page" routerLink="" style="color: white;" *ngIf="auth">Home</a>
           </li>
+          <li class="nav-item"><a class="nav-link active" routerLink="register" style="color: white;">Register</a></li>
+          <li class="nav-item"><a class="nav-link active" routerLink="login" style="color: white;">Login</a></li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="features"  style="color: white;">Features</a>
+            <a class="nav-link" routerLink="features"  style="color: white;"  *ngIf="auth">Features</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style="color: white;">
+          <li class="nav-item dropdown" *ngIf="auth">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style="color: white;"  *ngIf="auth">
               Product Types
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-              <li><a class="dropdown-item" routerLink="electronics">Electronics Devices</a></li>
-              <li><a class="dropdown-item" routerLink="fashiondeals">Fashion deals</a></li>
+              <li><a class="dropdown-item" routerLink="electronics" *ngIf="auth">Electronics Devices</a></li>
+              <li><a class="dropdown-item" routerLink="fashiondeals" *ngIf="auth">Fashion deals</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" routerLink="productdetail">product details</a></li>
+              <li><a class="dropdown-item" routerLink="productdetail" *ngIf="auth">product details</a></li>
               
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="contact"  style="color: white;">Contacts</a>
+            <a class="nav-link" routerLink="contact"  style="color: white;" *ngIf="auth">Contacts</a>
            
-          </li>
-          <li><a class="nav-item" routerLink="register" >Register</a></li>
-          <li><a class="nav-item" routerLink="login" >Login</a></li>
+          </li >
+          
+         
         </ul>
-        <form class="d-flex" style="margin-right: 300px;">
+        <form class="d-flex" style="margin-right: 50px;">
           <input class="form-control me-2" type="search" #productname placeholder="Enter product name" aria-label="Search">
           <button class="btn btn-outline-success" type="submit" (click)="search_product(productname.value); productname.value=''">Search</button>
             <br>
             <app-search [product]="productentered"></app-search>
         
         </form>
+        <button routerLink='cartitems' style="height:5px;border:none;" *ngIf="auth">
+          <span class="fa fa-cart-plus" style="font-size:16px;color:white"><sup class="text-warning" style="font-size:10px;margin-left: 3px;;">{{cartCount}}</sup></span>
+        </button> &nbsp;&nbsp;&nbsp;
       </div>
     </div>
   </nav>

@@ -162,40 +162,92 @@
       "password": "",
       "mobile": "",
       "id": 7
+    },
+    {
+      "username": "sasuke",
+      "useremail": "sas@gmail.com",
+      "password": "",
+      "mobile": "",
+      "id": 8
+    },
+    {
+      "username": "sakura",
+      "useremail": "sak@gmail.com",
+      "password": "",
+      "mobile": "",
+      "id": 9
+    },
+    {
+      "username": "hinata",
+      "useremail": "hin@gmail.com",
+      "password": "",
+      "mobile": "",
+      "id": 10
+    },
+    {
+      "username": "jonnny",
+      "useremail": "jon@gmail.com",
+      "password": "Jonny123",
+      "mobile": "123456789",
+      "id": 11
+    },
+    {
+      "username": "kkkkkkkkkkkk",
+      "useremail": "kk@gmail.com",
+      "password": "kkk12345",
+      "mobile": "9880440818",
+      "id": 12
     }
   ],
   "cart": [
     {
-      "pname": "Kids Frock",
-      "pdescription": "Kids dress for girls between 4 - 6 years old",
-      "price": 750,
-      "img": "https://th.bing.com/th/id/OIP.p9mcy1s4fqQiU1wJczY7fAHaHK?w=186&h=179&c=7&r=0&o=5&dpr=1.25&pid=1.7",
-      "quantity": 3,
-      "id": 1
-    },
-    {
-      "pname": "Kids Frock",
-      "pdescription": "Kids dress for girls between 4 - 6 years old",
-      "price": 750,
-      "img": "https://th.bing.com/th/id/OIP.p9mcy1s4fqQiU1wJczY7fAHaHK?w=186&h=179&c=7&r=0&o=5&dpr=1.25&pid=1.7",
-      "quantity": 4,
-      "id": 2
-    },
-    {
-      "pname": "Jabra Headphones",
-      "pdescription": "Jabra Headphones",
-      "price": 3500,
-      "img": "https://th.bing.com/th/id/OIP.6fUrfdYdaP2E2FMAwbmviQHaHa?pid=ImgDet&rs=1",
+      "pname": "Shirt",
+      "price": 650,
+      "img": "https://www.swarajyam.co.in/image/cache/catalog/Short%20Khadi%20Kurta/plain-white-khadi-shirt-200x200.jpg",
       "quantity": 1,
-      "id": 4
+      "id": 8
     },
     {
-      "pname": "Kids Frock",
-      "pdescription": "Kids dress for girls between 4 - 6 years old",
-      "price": 750,
-      "img": "https://th.bing.com/th/id/OIP.p9mcy1s4fqQiU1wJczY7fAHaHK?w=186&h=179&c=7&r=0&o=5&dpr=1.25&pid=1.7",
+      "pname": "Tshirt",
+      "price": 1090,
+      "img": "https://casablancaindia.com/image/cache/catalog/prods/2510-200x200.jpg",
       "quantity": 1,
-      "id": 5
+      "id": 9
+    },
+    {
+      "pname": "Pant",
+      "price": 700,
+      "img": "https://planetdsg.com/public/app/6632/dsg/RAMJET%20AIR%20PANTS/RAMJET%20AIR%20PANTS%20BLACK.jpg?width=200",
+      "quantity": 1,
+      "id": 10
+    },
+    {
+      "pname": "Shorts",
+      "price": 600,
+      "img": "https://contents.mediadecathlon.com/p2345497/1b5f3ffa86f18c429542a2d33b37af55/p2345497.jpg?format=auto&quality=70&f=200x0",
+      "quantity": 1,
+      "id": 11
+    },
+    {
+      "pname": "Saree",
+      "price": 3000,
+      "img": "https://1lyuijwwycldw.cdn.shift8web.com/wp-content/uploads/2021/02/gola-pink-original-cotton-silk-saree-200x200.jpeg",
+      "quantity": 1,
+      "id": 12
+    },
+    {
+      "pname": "Shirt",
+      "price": 650,
+      "img": "https://www.swarajyam.co.in/image/cache/catalog/Short%20Khadi%20Kurta/plain-white-khadi-shirt-200x200.jpg",
+      "quantity": 1,
+      "id": 13
+    },
+    {
+      "pname": "Tshirt",
+      "price": 1090,
+      "img": "https://casablancaindia.com/image/cache/catalog/prods/2510-200x200.jpg",
+      "quantity": 1,
+      "id": 14
     }
   ]
 }

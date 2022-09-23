@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ProductModel } from '../product-model';
 import { ProductapiService } from '../productapi.service';
 import { Router } from '@angular/router';
-import { FormBuilder,FormGroup } from '@angular/forms';
+import { FormBuilder,FormGroup,FormControl,Validators } from '@angular/forms';
 @Component({
   selector: 'app-productdetails',
   templateUrl: './productdetails.component.html',
@@ -17,9 +17,10 @@ export class ProductdetailsComponent implements OnInit {
   showUpdate!: boolean;
   constructor(private formbuilder: FormBuilder, private api:ProductapiService) { }
 
+  submitted = false;
   ngOnInit(): void {
     this.formValue = this.formbuilder.group({
-      pname:[''],
+      pname:['',[Validators.required]],
       pdescription:[''],
       price:[''],
       img:['']
