@@ -42,7 +42,7 @@
     <div class="col-md-12 min-vh-100 d-flex flex-column">
       <div class="row">
           <div class="col-lg-6 col-md-8 mx-auto">
-                    <div class="login-form">
+                    <div class="login-form" class="formy">
                             <form class="mt-5" [formGroup]="loginForm" (ngSubmit)="login()">
                                 <h2 class="text-center secondary ms-mb-m main-heading ng-binding">Login</h2>
                                 <br>
@@ -59,11 +59,11 @@
                                     <label class="error ng-binding" *ngIf="submitted && f['password'].errors?.['minlength']">Password must be at least 6 characters</label>
                                 </div>
                                 <br>
-                                <button type="submit" class="btn btn-primary" href="">Login</button>
+                                <button type="submit" class="btn btn-dark" href="">Login</button>
                                 
                                 <div class="ms-fs-12 text-center ms-mt-x ms-mb-m forgot">
                                     <p style="padding-top:30px">
-                                        <a href="register" class="secondary ng-binding" target="_blank">
+                                        <a href="register" class="secondary ng-binding" target="_blank" style="color: blue">
                                             Don't have an account? Register...
                                         </a>
                                     </p><p>

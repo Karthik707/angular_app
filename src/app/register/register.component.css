@@ -10,18 +10,21 @@ label {
 
 form {
     padding: 20px;
-    margin-left: 500px;
+    margin-left: 400px;
     width: 40%;
     border-style: inset;
-    border-radius: 10px;
+    
     border-color: black;
-    box-shadow: 2px 3px 4px yellow;
 }
 
 form:hover {
-    color: rgb(174, 155, 11);
+    color:white;
     background-color: rgb(40, 40, 40);
-    transform:scale(1.2);
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+    box-shadow: 0 14px 16px 0 rgba(22, 22, 26, 0.18);
+    border-radius: 0;
+    border: 0;
 
 }
 
@@ -32,3 +35,4 @@ button {
 span {
     width: 100%;
 }
+

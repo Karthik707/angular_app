@@ -1,24 +1,10 @@
 {
   "posts": [
     {
-      "id": 3,
-      "pname": "Dell Inspiron 15",
-      "pdescription": "Dell Laptop",
-      "price": "43999",
-      "img": "https://th.bing.com/th/id/OIP.w1nfH9XM1EoRpGvSyc-HHQHaHa?pid=ImgDet&rs=1"
-    },
-    {
-      "id": 4,
-      "pname": "Jabra Headphones",
-      "pdescription": "Jabra Headphones",
-      "price": 3500,
-      "img": "https://th.bing.com/th/id/OIP.6fUrfdYdaP2E2FMAwbmviQHaHa?pid=ImgDet&rs=1"
-    },
-    {
       "id": 6,
       "pname": "Sony TV",
       "pdescription": "Sony Bravia LED TV - 65 inch",
-      "price": 35000,
+      "price": "36000",
       "img": "https://th.bing.com/th/id/OIP.z35a_DfUQDnaHz2Nh8y7OgHaHa?pid=ImgDet&rs=1"
     },
     {
@@ -118,6 +104,13 @@
       "pdescription": "apple",
       "price": "60000",
       "img": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MQE23ref_VW_34FR+watch-49-titanium-ultra_VW_34FR_WF_CO+watch-face-49-alpine-ultra_VW_34FR_WF_CO_GEO_IN?wid=750&hei=712&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1660713657930%2C1660927566964%2C1661371890735"
+    },
+    {
+      "id": 21,
+      "pname": null,
+      "pdescription": null,
+      "price": null,
+      "img": null
     }
   ],
   "users": [
@@ -248,6 +241,13 @@
       "img": "https://casablancaindia.com/image/cache/catalog/prods/2510-200x200.jpg",
       "quantity": 1,
       "id": 14
+    },
+    {
+      "pname": "Shirt",
+      "price": 650,
+      "img": "https://www.swarajyam.co.in/image/cache/catalog/Short%20Khadi%20Kurta/plain-white-khadi-shirt-200x200.jpg",
+      "quantity": 2,
+      "id": 15
     }
   ]
 }

@@ -13,19 +13,22 @@ h4{
 
 form {
     padding: 20px;
-    margin-left: 200px;
-    margin-top: 40px;
+    margin-left: 130px;
+    margin-top: -10px;
     width: 40%;
     border-style: inset;
-    border-radius: 10px;
     border-color: black;
-    box-shadow: 2px 3px 4px yellow;
+    
 }
 
 form:hover {
-    color: rgb(174, 155, 11);
+    color:white;
     background-color: rgb(40, 40, 40);
-    transform:scale(1.2);
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+    box-shadow: 0 14px 16px 0 rgba(22, 22, 26, 0.18);
+    border-radius: 0;
+    border: 0;
 
 }
 
@@ -36,4 +39,12 @@ button {
 span {
     width: 60%;
     margin-left: 100px;
+}
+
+.formy{
+    width: 1000px;
+}
+
+p:hover{
+    color: white;
 }

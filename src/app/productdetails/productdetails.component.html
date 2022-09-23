@@ -89,7 +89,7 @@
     </div>
   </div>
 </nav>
-<table class="table table-hover">
+<table class="table">
   <thead>
     <tr>
       <th scope="col">Product ID</th>
@@ -101,7 +101,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let product of productData">
+    <tr *ngFor="let product of productData" class="car">
       <td>{{product.id}}</td>
       <td>{{product.pname}}</td>
       <td>{{product.pdescription}}</td>
@@ -132,19 +132,26 @@
           <div class="mb-3">
             <label class="form-label">Name</label>
             <input type="pname" class="form-control" formControlName="pname">
-           
+            <label style="color: red;" class="error ng-binding" *ngIf="submitted && f['pname'].errors?.['required']">Name is required
+            </label>
           </div>
           <div class="mb-3">
             <label class="form-label">Description</label>
             <input type="pdescription" class="form-control" formControlName="pdescription">
+            <label style="color: red;" class="error ng-binding" *ngIf="submitted && f['pdescription'].errors?.['required']">Description is required
+            </label>
           </div>
           <div class="mb-3">
             <label class="form-label">Price</label>
             <input type="price" class="form-control" formControlName="price">
+            <label style="color: red;" class="error ng-binding" *ngIf="submitted && f['price'].errors?.['required']">Price is required
+            </label>
+            <label style="color: red;" class="error ng-binding" *ngIf="submitted && f['price'].errors?.['pattern']">Price should be in numbers</label>
           </div>
           <div class="mb-3">
             <label class="form-label">Image</label>
             <input type="img" class="form-control" formControlName="img">
+            <label style="color: red;" class="error ng-binding" *ngIf="submitted && f['img'].errors?.['required']">Image is required</label>
           </div>
         </form>
       </div>

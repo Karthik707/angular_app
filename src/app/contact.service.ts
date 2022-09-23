@@ -24,7 +24,7 @@ export class ContactService {
     const contObservable = new Observable(observe => {
       setTimeout(() => {
         observe.next(this.cont);
-      }, 1000);
+      }, 5000);
     });
     return contObservable;
   }

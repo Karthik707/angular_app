@@ -29,11 +29,15 @@
                 
             </div>
             
-            <div style="margin-left: 50px; margin-top: 70px;">
+            <div style="margin-left: 50px; margin-top: 10px;">
                 
-                <app-counter></app-counter>
+                <!--<app-counter></app-counter>-->
+                
+                
                 <button (click)="showproductDetailsToggle()" [ngClass]="toggleContent()" type="button" style="background-color:white; color: black; margin-left: 30px;"><small></small></button>
                 <button type="button" class="btn btn-info btn-sm" style="margin-left: 10px; background-color:white; color:black;" (click)="addToCart(product)"><small>Buy</small></button>
+                <br><input type="number" name="quantity" [(ngModel)]="quantity" style="width:50px;border-radius:10px;margin-left: 30px;" min="1" max="25">
+                :Quantity 
                 
             </div>
         </div>
