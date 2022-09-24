@@ -106,11 +106,11 @@
       "img": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MQE23ref_VW_34FR+watch-49-titanium-ultra_VW_34FR_WF_CO+watch-face-49-alpine-ultra_VW_34FR_WF_CO_GEO_IN?wid=750&hei=712&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1660713657930%2C1660927566964%2C1661371890735"
     },
     {
-      "id": 21,
-      "pname": null,
-      "pdescription": null,
-      "price": null,
-      "img": null
+      "id": 22,
+      "pname": "Shoe",
+      "pdescription": "US polo",
+      "price": "1000",
+      "img": "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/10339033/2022/4/25/3170e623-ab80-4678-9628-14cb6033ab171650883660619USPoloAssnMenWhiteClarkinSneakers1.jpg"
     }
   ],
   "users": [
@@ -190,6 +190,13 @@
       "password": "kkk12345",
       "mobile": "9880440818",
       "id": 12
+    },
+    {
+      "username": "Alexblaze",
+      "useremail": "alex@gmail.com",
+      "password": "alex123",
+      "mobile": "1234567890",
+      "id": 13
     }
   ],
   "cart": [

@@ -1,6 +1,6 @@
 <div class="container">
-    <h2>Total Cart Amount: {{totalPrice(cart)|currency:'INR':'symbol':'3.0'}}</h2>
-    <hr>
+    <h3 style="text-align: center;margin-bottom:30px;margin-top:30px;">Total Cart Amount: {{totalPrice(cart)|currency:'INR':'symbol':'3.0'}}</h3>
+    
     <div class="row" style="background-color: black;color:white">
       <div class="col-sm">
         <h3>Product Image</h3>
@@ -21,17 +21,17 @@
     <hr>
     <div class="container" *ngFor="let item of cart" style="background-color: black;color:white;" class="formy">
       <div class="row">
-        <div class="col-sm" style="margin-top: 10px;">
-          <img src={{item.img}}>
+        <div class="col-sm" style="margin-top: 10px; width: 100px;height: 100px;">
+          <img src={{item.img}} style="width: 100px;height:100px;margin-left: 30px;">
         </div>
         <div class="col-sm">
-          <h3> {{item.pname}}</h3>
+          <h5> {{item.pname}}</h5>
         </div>
         <div class="col-sm">
-          <h3> {{item.quantity}}</h3>
+          <h5> {{item.quantity}}</h5>
         </div>
         <div class="col-sm">
-          <h3> {{item.price}}</h3>
+          <h5> {{item.price}}</h5>
         </div>
         <div class="col-sm">
           <div>{{item.totalPrice}}</div>
@@ -47,7 +47,7 @@
       </div>   
       <div class="col-lg-5">
         <div>
-          <h3>Total: {{totalPrice(cart)|currency:'INR'}}</h3>
+          <h4> <a href="https://rzp.io/i/783KMkD" target="_blank" class="btn btn-dark m-3">Total: {{totalPrice(cart)|currency:'INR'}}</a> </h4>
         </div>
       </div>
     </div>
