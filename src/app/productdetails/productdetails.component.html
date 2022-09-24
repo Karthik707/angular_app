@@ -83,8 +83,8 @@
     <h1 style="color: aliceblue; font-size: 20px;">PRODUCTS DETAILS</h1>
     <div class="d-flex">
      
-      <button (click)="clickAddProduct()" type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        <i class="fa-solid fa-plus"></i>
+      <button (click)="clickAddProduct()" type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Add <i class="fa-solid fa-circle-plus"></i>
       </button>
     </div>
   </div>
@@ -110,8 +110,8 @@
         <img [src]="product.img" class="prodimg">
       </td>
       <td>
-        <button (click)="onEdit(product)" type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          <i class="fa-solid fa-pen-to-square"></i>
+        <button (click)="onEdit(product)" type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <i class="fa-solid fa-pen"></i>
         </button>&nbsp;
         <button (click)="deleteProducts(product)" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
       </td>
